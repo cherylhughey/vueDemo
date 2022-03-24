@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Explorer Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/cherylhughey/websiteArchive/master/img/logo.ico">
+</head>
+<body>
+<div id="app">
+  <v-app>
+    <v-app-bar
+      app
+      color="white"
+      height="100"
+    >
+      <v-avatar
+        class="mr-3"
+        color="grey lighten-5"
+        size="70"
+      >
+        <v-img
+          contain
+          max-height="70%"
+          src="./img/logo.png"
+        ></v-img>
+      </v-avatar>
+
+      <v-toolbar-title class="font-weight-black headline">
+        Team Explorer
+      </v-toolbar-title>
+    </v-app-bar>
+
+    <v-main>
+      <section id="hero">
+        <v-row no-gutters>
+          <v-img
+            :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
+            src="./img/background.jpg"
+          >
+            <v-theme-provider dark>
+              <v-container fill-height>
+                <v-row
+                  align="center"
+                  class="white--text mx-auto"
+                  justify="center"
+                >
+                  <v-col
+                    class="white--text text-center"
+                    cols="12"
+                    tag="h1"
+                  >
+                    <span
+                    :class="[$vuetify.breakpoint.smAndDown ? 'display-1' : 'display-2']"
+                      class="font-weight-light"
+                    >
+                      LAUNCH YOUR
+                    </span>
+
+                    <br>
+
+                    <span
+                      :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"
+                      class="font-weight-black"
+                    >
+                      STORY
+                    </span>
+
+                  </v-col>
+
+                  <v-btn
+                    class="align-self-end"
+                    fab
+                    outlined
+                    @click="$vuetify.goTo('#about-me')"
+                  >
+                    <v-icon>mdi-chevron-double-down</v-icon>
+                  </v-btn>
+                </v-row>
+              </v-container>
+            </v-theme-provider>
+          </v-img>
+        </v-row>
+      </section>
+
+      <section id="about-me">
+        <div class="py-12"></div>
+
+        <v-container class="text-center">
+          <h2 class="display-2 font-weight-bold mb-3">Moonshot Begins Here</h2>
+
+          <v-responsive
+            class="mx-auto mb-8"
+            width="56"
+          >
+            <v-divider class="mb-1"></v-divider>
+
+            <v-divider></v-divider>
+          </v-responsive>
+         </v-container>
+        
+        <v-container>
+          <v-responsive
+            class="mx-auto title font-weight-light mb-8"
+            max-width="950"
+          >
+<<<<<<< HEAD
+            Sensors indicate no shuttle or other ships in this sector. According to coordinates, we have travelled 7,000 light years and are located near the system J-25. Tractor beam released, sir. Force field maintaining our hull integrity. Damage report? Sections 27, 28 and 29 on decks four, five and six destroyed. Without our shields, at this range it is probable a photon detonation could destroy the Enterprise.        </v-responsive>
+
+=======
+            A TARDIS is my ship that carries me through Time and Space. T-A-R-D-I-S. It stands for Time And Relative Dimension In Space. A little gratitude wouldn’t irretrievably damage my ego. Our lives are different from anybody else’s. That’s the exciting thing. Nobody in the universe can do what we’re doing. Let’s go in! I am the Doctor! The original you might say! Would you like a jelly baby? Boring. And I hate hotels. It was on the planet Skaro that my old enemy the Master was finally put on trial. They say he listened calmly as his list of evil crimes was read… and sentence passed. Then he made his last and I thought somewhat curious request. He demanded that I, the Doctor, a rival Timelord, should take his remains back to our home planet, Gallifrey.          </v-responsive>
+        </v-container>
+        
+        <v-container class="text-center">
+>>>>>>> e2778f5203693b0a724f5e2bfa173a4c93cb9f88
+          <v-avatar
+            class="elevation-12 mb-12"
+            size="128"
+          >
+            <v-img src="./img/logo.png"></v-img>
+          </v-avatar>
+
+          <div></div>
+
+          <v-btn
+            color="grey"
+            href="./plan.html"
+            outlined
+            large
+          >
+            <span class="grey--text text--darken-1 font-weight-bold">
+              Plan
+            </span>
+          </v-btn>
+        </v-container>
+
+        <div class="py-12"></div>
+      </section>
+
+      <section
+        id="features"
+        class="grey lighten-3"
+      >
+        <div class="py-12"></div>
+
+        <v-container class="text-center">
+          <h2 class="display-2 font-weight-bold mb-3">The Future Awaits</h2>
+         
+          <v-responsive
+            class="mx-auto mb-12"
+            width="56"
+          >
+            <v-divider class="mb-1"></v-divider>
+
+            <v-divider></v-divider>
+          </v-responsive>
+
+          <v-row>
+            <v-col
+              v-for="({ icon, title, text }, i) in features"
+              :key="i"
+              cols="12"
+              md="4"
+            >
+              <v-card
+                class="py-12 px-4"
+                color="grey lighten-5"
+                flat
+              >
+                <v-theme-provider dark>
+                  <div>
+                    <v-avatar
+                      color="primary"
+                      size="88"
+                    >
+                      <v-icon
+                        large
+                        v-text="icon"
+                      ></v-icon>
+                    </v-avatar>
+                  </div>
+                </v-theme-provider>
+
+                <v-card-title
+                  class="justify-center font-weight-black text-uppercase"
+                  v-text="title"
+                ></v-card-title>
+
+                <v-card-text
+                  class="subtitle-1"
+                  v-text="text"
+                >
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
+
+        <div class="py-12"></div>
+      </section>
+
+      <section id="blog">
+        <div class="py-12"></div>
+
+        <v-container>
+          <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Log</h2>
+
+          <v-responsive
+            class="mx-auto mb-12"
+            width="56"
+          >
+            <v-divider class="mb-1"></v-divider>
+
+            <v-divider></v-divider>
+          </v-responsive>
+
+          <v-row>
+            <v-col
+              v-for="({ src, text, title }, i) in articles"
+              :key="i"
+              cols="12"
+              md="4"
+            >
+              <v-img
+                :src="src"
+                class="mb-4"
+                height="275"
+                max-width="100%"
+              ></v-img>
+
+              <h3
+                class="font-weight-black mb-4 text-uppercase"
+                v-text="title"
+              ></h3>
+
+              <div
+                class="title font-weight-light mb-5"
+                v-text="text"
+              ></div>
+
+              <v-btn
+                class="ml-n4 font-weight-black"
+                text
+              >
+                Continue Reading
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-container>
+
+        <div class="py-12"></div>
+      </section>
+
+      <v-sheet
+        id="contact"
+        color="#333333"
+        dark
+        tag="section"
+        tile
+      >
+        <div class="py-12"></div>
+
+        <v-container>
+          <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Enroll Now</h2>
+
+          <v-responsive
+            class="mx-auto mb-12"
+            width="56"
+          >
+            <v-divider class="mb-1"></v-divider>
+
+            <v-divider></v-divider>
+          </v-responsive>
+
+          <v-theme-provider light>
+            <v-row>
+              <v-col cols="12">
+                <v-text-field
+                  flat
+                  label="Name*"
+                  solo
+                ></v-text-field>
+              </v-col>
+
+              <v-col cols="12">
+                <v-text-field
+                  flat
+                  label="Email*"
+                  solo
+                ></v-text-field>
+              </v-col>
+
+              <v-col cols="12">
+                <v-text-field
+                  flat
+                  label="Subject*"
+                  solo
+                ></v-text-field>
+              </v-col>
+
+              <v-col cols="12">
+                <v-textarea
+                  flat
+                  label="Message*"
+                  solo
+                ></v-textarea>
+              </v-col>
+
+              <v-col
+                class="mx-auto"
+                cols="auto"
+              >
+                <v-btn
+                  color="accent"
+                  x-large
+                >
+                  Submit
+                </v-btn>
+              </v-col>
+            </v-row>
+          </v-theme-provider>
+        </v-container>
+
+        <div class="py-12"></div>
+      </v-sheet>
+    </v-main>
+
+    <v-footer
+      class="justify-center"
+      color="#292929"
+      height="100"
+    >
+      <div class="title font-weight-light grey--text text--lighten-1 text-center">
+        &copy; {{ (new Date()).getFullYear() }} Cheryl Hughey Promotions, LLC
+      </div>
+    </v-footer>
+  </v-app>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+ <script>
+  new Vue({
+    el: '#app',
+    vuetify: new Vuetify(),
+    data () {
+      return {
+        articles: [
+          {
+            src: './img/blue-angels.jpg',
+            title: 'Friends from far away places',
+            text: 'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
+          },
+          {
+            src: './img/flag.jpg',
+            title: 'Finding the answer',
+            text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
+          },
+          {
+            src: './img/uss-america.jpg',
+            title: 'A seekers journey',
+            text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
+          },
+        ],
+        features: [
+          {
+            icon: 'mdi-language-html5',
+            title: 'HTML5/CSS',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
+          },
+          {
+            icon: 'mdi-language-javascript',
+            title: 'Javascript',
+            text: 'Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.',
+          },
+          {
+            icon: 'mdi-vuejs',
+            title: 'Vue/Vuetify',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
+          },
+          {
+            icon: 'mdi-file-document',
+            title: 'Style Guide',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
+          },
+          {
+            icon: 'mdi-view-list',
+            title: 'Components',
+            text: 'Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.',
+          },
+          {
+            icon: 'mdi-file-cabinet',
+            title: 'Templates',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
+          },
+        ],
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

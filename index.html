@@ -10,6 +10,65 @@
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/cherylhughey/websiteArchive/master/img/logo.ico">
 </head>
 <body>
+<script>
+  new Vue({
+    el: '#app',
+    vuetify: new Vuetify(),
+    data () {
+      return {
+        articles: [
+          {
+            src: './img/blue-angels.jpg',
+            title: 'Friends from far away places',
+            text: 'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
+          },
+          {
+            src: './img/flag.jpg',
+            title: 'Finding the answer',
+            text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
+          },
+          {
+            src: './img/uss-america.jpg',
+            title: 'A seekers journey',
+            text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
+          },
+        ],
+        features: [
+          {
+            icon: 'mdi-language-html5',
+            title: 'HTML5/CSS',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
+          },
+          {
+            icon: 'mdi-language-javascript',
+            title: 'Javascript',
+            text: 'Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.',
+          },
+          {
+            icon: 'mdi-vuejs',
+            title: 'Vue/Vuetify',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
+          },
+          {
+            icon: 'mdi-file-document',
+            title: 'Style Guide',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
+          },
+          {
+            icon: 'mdi-view-list',
+            title: 'Components',
+            text: 'Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.',
+          },
+          {
+            icon: 'mdi-file-cabinet',
+            title: 'Templates',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
+          },
+        ],
+      }
+    }
+  })
+</script>
 <div id="app">
   <v-app>
     <v-app-bar
@@ -332,65 +391,5 @@
  </div>
  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
- <script>
-  new Vue({
-    el: '#app',
-    vuetify: new Vuetify(),
-    data () {
-      return {
-        articles: [
-          {
-            src: './img/blue-angels.jpg',
-            title: 'Friends from far away places',
-            text: 'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
-          },
-          {
-            src: './img/flag.jpg',
-            title: 'Finding the answer',
-            text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
-          },
-          {
-            src: './img/uss-america.jpg',
-            title: 'A seekers journey',
-            text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
-          },
-        ],
-        features: [
-          {
-            icon: 'mdi-language-html5',
-            title: 'HTML5/CSS',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
-          },
-          {
-            icon: 'mdi-language-javascript',
-            title: 'Javascript',
-            text: 'Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.',
-          },
-          {
-            icon: 'mdi-vuejs',
-            title: 'Vue/Vuetify',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
-          },
-          {
-            icon: 'mdi-file-document',
-            title: 'Style Guide',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
-          },
-          {
-            icon: 'mdi-view-list',
-            title: 'Components',
-            text: 'Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.',
-          },
-          {
-            icon: 'mdi-file-cabinet',
-            title: 'Templates',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
-          },
-        ],
-      }
-    }
-  })
-</script>
-
 </body>
 </html>

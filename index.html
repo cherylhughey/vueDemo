@@ -10,15 +10,6 @@
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/cherylhughey/websiteArchive/master/img/logo.ico">
 </head>
 <body>
- <template>
-    <section id="prod-main">
-        <prod-preview
-            v-if="products.length > 0" 
-            v-for="prod in products" 
-            :id="prod.id" 
-            :key="prod.id"/>
-    </section> /*Answer found https://stackoverflow.com/questions/48962000/vue-prerender-flickering via Travis Brd dated 2/25/18 (License https://creativecommons.org/licenses/by-sa/4.0/)*/
-</template>
 <div id="app">
   <v-app>
     <v-app-bar

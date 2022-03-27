@@ -10,6 +10,15 @@
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/cherylhughey/websiteArchive/master/img/logo.ico">
 </head>
 <body>
+ <template>
+    <section id="prod-main">
+        <prod-preview
+            v-if="products.length > 0" 
+            v-for="prod in products" 
+            :id="prod.id" 
+            :key="prod.id"/>
+    </section>
+</template>
 <div id="app">
   <v-app>
     <v-app-bar
